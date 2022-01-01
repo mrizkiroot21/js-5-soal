@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <select id="dropdown" onchange="cetakGambar()">
+        <option value="senja">foto 1</option>
+        <option value="kucing putih">foto 2</option>
+        <option value="kucing rebahan">foto 3</option>
+        <option value="malam">foto 4</option>
+        <option value="kucing setengah">foto 5</option>
+        <option value="panda">foto 6</option>
+    </select>
+    <br>
+    <img id="image" style="width: 25%;">
+
+
+    <script>
+        const cetakGambar = () => {
+        const dropdown = document.getElementById("dropdown");
+        const image = document.getElementById('image');
+
+        if(dropdown.value === 'senja') {
+            image.setAttribute('src', 'img/1.JPG');
+            alert('foto 1');
+        } else if (dropdown.value === 'kucing putih') {
+            image.setAttribute('src', 'img/2.jpeg');
+            alert('foto 2');
+        } else if (dropdown.value === 'kucing rebahan') {
+            image.setAttribute('src', 'img/3.JPG');
+            alert('foto 3');
+        } else if (dropdown.value === 'malam') {
+            image.setAttribute('src', 'img/4.JPG');
+            alert('foto 4');
+        } else if (dropdown.value === 'kucing setengah') {
+            image.setAttribute('src', 'img/5.JPG');
+            alert('foto 5');
+        } else if (dropdown.value === 'panda') {
+            image.setAttribute('src', 'img/6.JPG');
+            alert('foto 6');
+        }
+    }
+    </script>
+</body>
+</html>
