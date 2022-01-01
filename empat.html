@@ -16,12 +16,12 @@
 </head>
 <body>
     <select id="dropdown" onchange="cetakGambar()">
-        <option value="senja">foto 1</option>
-        <option value="kucing putih">foto 2</option>
-        <option value="kucing rebahan">foto 3</option>
-        <option value="malam">foto 4</option>
-        <option value="kucing setengah">foto 5</option>
-        <option value="panda">foto 6</option>
+        <option value="harimau">image harimau</option>
+        <option value="panda sedang berjemur">image panda sedang tertidur</option>
+        <option value="kucing sedang tidur">image kucing sedang tertidur</option>
+        <option value="anjing">image anjing</option>
+        <option value="buaya sedang berjemur">image buaya sedang tertidur</option>
+        <option value="kelinci">image kelinci</option>
     </select>
     <br>
     <img id="image" style="width: 25%;">
@@ -32,24 +32,24 @@
         const dropdown = document.getElementById("dropdown");
         const image = document.getElementById('image');
 
-        if(dropdown.value === 'senja') {
-            image.setAttribute('src', 'img/1.JPG');
-            alert('foto 1');
-        } else if (dropdown.value === 'kucing putih') {
-            image.setAttribute('src', 'img/2.jpeg');
-            alert('foto 2');
-        } else if (dropdown.value === 'kucing rebahan') {
-            image.setAttribute('src', 'img/3.JPG');
-            alert('foto 3');
-        } else if (dropdown.value === 'malam') {
-            image.setAttribute('src', 'img/4.JPG');
-            alert('foto 4');
-        } else if (dropdown.value === 'kucing setengah') {
-            image.setAttribute('src', 'img/5.JPG');
-            alert('foto 5');
-        } else if (dropdown.value === 'panda') {
-            image.setAttribute('src', 'img/6.JPG');
-            alert('foto 6');
+        if(dropdown.value === 'harimau1') {
+            image.setAttribute('src', 'img/harimau.jfif');
+            alert('image harimau');
+        } else if (dropdown.value === 'panda sedang berjemur') {
+            image.setAttribute('src', 'img/panda sedang berjemur.jpg');
+            alert('image panda');
+        } else if (dropdown.value === 'kucing sedang tidur') {
+            image.setAttribute('src', 'img/kucing sedang tertidur.jfif');
+            alert('image kucing');
+        } else if (dropdown.value === 'anjing') {
+            image.setAttribute('src', 'img/anjing.jfif');
+            alert('image anjing');
+        } else if (dropdown.value === 'buaya sedang berjemur') {
+            image.setAttribute('src', 'img/buaya.jfif');
+            alert('image');
+        } else if (dropdown.value === 'kelinci') {
+            image.setAttribute('src', 'img/kelinci.jpg');
+            alert('image kelinci');
         }
     }
     </script>
